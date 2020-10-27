@@ -28,7 +28,12 @@ namespace StacksAndQueueUsingLinkedList
            queue.Enqueue(30);
            queue.Enqueue(70);
            queue.Display();
-           Console.ReadKey();
+            ///UC4
+            queue.Dequeue();
+            queue.Display();
+            queue.Dequeue();
+            queue.Display();
+            Console.ReadKey();
             }
     }
 }
