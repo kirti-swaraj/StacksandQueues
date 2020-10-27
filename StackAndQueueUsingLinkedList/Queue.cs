@@ -30,6 +30,20 @@ namespace StacksAndQueueUsingLinkedList
             }
             Console.WriteLine("{0} enqueued into the queue", value);
         }
+        /// <summary>
+        /// UC 4 : Dequeues and removes the value at front.
+        /// </summary>
+        public void Dequeue()
+        {
+            if (this.front == null)
+            {
+                Console.WriteLine("Queue is empty");
+                return;
+            }
+            Node temp = this.front;
+            this.front = this.front.next;
+            Console.WriteLine("Dequeued value: " + temp.data);
+        }
 
         /// <summary>
         /// Displays the queue contents from front to rear.
