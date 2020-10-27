@@ -2,9 +2,23 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace StackAndQueueUsingLinkedList
+// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="Node.cs" company="Bridgelabz">
+//   Copyright © 2018 Company
+// </copyright>
+// <creator Name="Kirti Swaraj"/>
+// --------------------------------------------------------------------------------------------------------------------
+
+namespace StacksAndQueueUsingLinkedList
 {
-    class Node
+    public class Node
     {
+        public int data;
+        public Node next;
+        public Node(int data)
+        {
+            this.data = data;
+            this.next = null;
+        }
     }
 }
